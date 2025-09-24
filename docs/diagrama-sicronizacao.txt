@@ -1,0 +1,12 @@
+FLUXO DE SINCRONIZAÇÃO DO LOGGER:
+
+[THREAD] → [MUTEX.lock()] → [ESCREVE NO ARQUIVO] → [MUTEX.unlock()]
+     ↑            │                │                      │
+     │            ▼                ▼                      ▼
+     └──[SE MUTEX BLOQUEADO]→[AGUARDA]→[CONTINUA QUANDO LIBERADO]
+
+PROPRIEDADES GARANTIDAS:
+- Exclusão Mútua: Apenas 1 thread escreve por vez
+- Integridade: Mensagens não se misturam
+- Performance: Bloqueio mínimo (apenas durante I/O)
+- Safety: Mutex sempre liberado (even em erro)
