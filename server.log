@@ -1,13 +1,10 @@
 [INFO] === SERVIDOR INICIADO ===
+[INFO] Database SQLite aberto: scheduler.db
+[INFO] Tabelas do database criadas/verificadas
 [INFO] Fila de jobs inicializada
-[INFO] Servidor ouvindo na porta 8080
-[INFO] Nova conexão cliente aceita
-[INFO] Mensagem recebida: JOB:python -c "print('Hello World')"
-[INFO] Job 1 adicionado à fila (script: python -c "print('Hello World')")
-[INFO] Job 1 aceito: python -c "print('Hello World')"
-[INFO] Cliente desconectado
-[INFO] Nova conexão cliente aceita
-[INFO] Mensagem recebida: JOB:lua -e "print('Lua script')"
-[INFO] Job 2 adicionado à fila (script: lua -e "print('Lua script')")
-[INFO] Job 2 aceito: lua -e "print('Lua script')"
-[INFO] Cliente desconectado
+[INFO] Worker Manager inicializado
+[INFO] Monitor CLI inicializado
+[INFO] Monitor CLI iniciado
+[INFO] === FILA DE JOBS (0 jobs) ===
+[INFO] Fila vazia
+[INFO] Workers ativos: 0 (implementação básica)
